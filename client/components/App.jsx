@@ -1,9 +1,17 @@
 import React from 'react'
 
+import Header from './Header'
+import DisplayRecipie from './DisplayRecipie'
+import FoodSelector from './FoodSelector'
+
 function App () {
   return (
     <div className="app">
-      <h1>Hi</h1>
+      <Header />
+      {/* Route these two "pages" */}
+      <FoodSelector />
+      <DisplayRecipie />
+
     </div>
   )
 }
