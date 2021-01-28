@@ -1,17 +1,17 @@
 const ingredients = [
-  'sausage', 
-  'mushroom', 
-  'bread', 
-  'tomato', 
-  'egg', 
-  'yogurt', 
+  'sausage',
+  'mushroom',
+  'bread',
+  'tomato',
+  'egg',
+  'yogurt',
   'milk',
   'bacon',
   'avocado',
   'cheese',
-  'rice', 
+  'rice',
   'hashbrown',
   'berries'
-  ]
-  
-  export default ingredients
+]
+
+export default ingredients
