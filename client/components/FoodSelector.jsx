@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+import IngredientBoard from './IngredientBoard'
+
+import ingredients from '../../data/ingredients.mjs'
+// import recipes from '../../data/recipes.mjs'
+
+const ingredientsFilterInitial = ingredients.map(ingredient => ({ name: ingredient, selected: true }))
 
 export default function FoodSelector () {
+  const [ingredientsFilter, setIngredientsFilter] = useState(ingredientsFilterInitial)
+
   return (
-    <h1>Hello!</h1>
+    <>
+      <IngredientBoard
+        ingredientsFilter={ingredientsFilter}
+        setIngredientsFilter={setIngredientsFilter}
+      />
+    </>
   )
 }
