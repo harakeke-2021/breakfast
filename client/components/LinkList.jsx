@@ -1,20 +1,19 @@
 import React from 'react'
 import recipesData from '../../data/recipes.mjs'
-import { Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function LinkList ({ data }) {
-  const recipies = recipesData
+  // const recipies = recipesData
   return (
-  <div>
-    {
-    recipesData.map((recipe, index) => {
-      return <li key={index}> <Link to={`/recipe/${recipe.id}`}>{recipe.name} </Link></li>
-    }
-    )}
-  </div>
+    <div>
+      {
+        recipesData.map((recipe, index) => {
+          return <li key={index}> <Link to={`/recipe/${recipe.id}`}>{recipe.name} </Link></li>
+        }
+        )}
+    </div>
 
   )
-
 }
 
 export default LinkList
