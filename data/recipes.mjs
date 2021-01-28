@@ -59,7 +59,7 @@ recipe6.steps = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Moles
 recipe7.name = 'Avocado on Toast'
 recipe7.id = 7
 recipe7.ingredients = ['avocado', 'bread']
-recipe7.description = `You probably can't afford this`
+recipe7.description = 'You probably can\'t afford this'
 recipe7.img = '7.jpg'
 recipe7.steps = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, error accusamus. Illo debitis soluta laudantium optio repellat perferendis obcaecati corporis autem laboriosam, mollitia inventore tempora minima similique dicta, sed consequuntur pariatur delectus rerum illum, qui sit expedita aliquam modi cupiditate? Quod minus unde harum laudantium minima, dignissimos nulla tempore. Nemo?'
 
@@ -75,8 +75,3 @@ const recipes = [
 ]
 
 export default recipes
-
-
-
-
-
