@@ -15,11 +15,20 @@ export default function DisplayRecipe(props) {
       <ul>
         {recipe.ingredients.map(ingredient => {
           return (
-            <li>{ingredient[0].toUpperCase() + ingredient.slice(1)}</li>
+            <li key='ingredient'>{ingredient[0].toUpperCase() + ingredient.slice(1)}</li>
           )
         })}
       </ul>
-      <p>{recipe.steps}</p>
+      <p>
+        {recipe.steps.map((step, idx) => {
+          return (
+            <>
+              {`${idx + 1}. ${step}`}<br />
+            </>
+          )
+        }
+        )}
+      </p>
     </div>
   )
 }
