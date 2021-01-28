@@ -10,6 +10,18 @@ const ingredientsFilterInitial = ingredients.map(ingredient => ({ name: ingredie
 export default function FoodSelector () {
   const [ingredientsFilter, setIngredientsFilter] = useState(ingredientsFilterInitial)
 
+  function updateCheckbox (ing) {
+    return (e) => setIngredientsFilter((state) => {
+      state = state.map(a => {
+        if (a.name === ing.name) {
+          a.selected = !a.selected
+        }
+        return a
+      })
+      return state
+    })
+  }
+
   return (
     <>
       <ul>
@@ -27,16 +39,4 @@ export default function FoodSelector () {
       </ul>
     </>
   )
-
-  function updateCheckbox (ing) {
-    return (e) => setIngredientsFilter((state) => {
-      state = state.map(a => {
-        if (a.name === ing.name) {
-          a.selected = !a.selected
-        }
-        return a
-      })
-      return state
-    })
-  }
 }
