@@ -4,9 +4,6 @@ import { Route } from 'react-router-dom'
 import Header from './Header'
 import DisplayRecipe from './DisplayRecipe'
 import FoodSelector from './FoodSelector'
-import LinkList from './LinkList'
-
-
 
 function App () {
   return (
