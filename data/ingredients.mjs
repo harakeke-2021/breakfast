@@ -13,5 +13,5 @@ const ingredients = [
   'hashbrown',
   'berries'
   ]
-
+  
   export default ingredients
