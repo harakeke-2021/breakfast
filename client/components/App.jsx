@@ -1,16 +1,17 @@
 import React from 'react'
+import { Route } from 'react-router-dom'
 
 import Header from './Header'
-import DisplayRecipie from './DisplayRecipie'
+import DisplayRecipe from './DisplayRecipe'
 import FoodSelector from './FoodSelector'
 
 function App () {
   return (
     <div className="app">
-      <Header />
+      <Route path='/' component={Header} />
       {/* Route these two "pages" */}
-      <FoodSelector />
-      <DisplayRecipie />
+      <Route exact path='/' component={FoodSelector}/>
+      <Route exact path='/recipe/:id' component={DisplayRecipe} />
 
     </div>
   )
