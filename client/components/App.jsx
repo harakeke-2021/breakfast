@@ -1,10 +1,11 @@
 import React from 'react'
 
-function App() {
-    return (
-        <h1>Hi</h1>
-    )
-
+function App () {
+  return (
+    <div className="app">
+      <h1>Hi</h1>
+    </div>
+  )
 }
 
 export default App

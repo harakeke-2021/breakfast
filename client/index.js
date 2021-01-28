@@ -5,11 +5,10 @@ import { HashRouter as Router } from 'react-router-dom'
 import App from './components/App'
 
 document.addEventListener('DOMContentLoaded', () => {
-ReactDOM.render(
+  ReactDOM.render(
     <Router>
-        <App />
+      <App />
     </Router>,
     document.getElementById('app')
-)
-
+  )
 })
