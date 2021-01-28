@@ -19,7 +19,7 @@ export default function IngredientBoard (props) {
         {ingredientsFilter.map((ing) => {
           console.log(`${ing.name}: ${ing.selected}`)
           return (
-            <div key={ing.ame}>
+            <div key={ing.name}>
               <label>{ing.name} {ing.selected ? 'true' : 'false'}</label>
               <input
                 type="checkbox"
