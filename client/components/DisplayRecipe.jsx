@@ -9,7 +9,7 @@ export default function DisplayRecipe(props) {
   return (
     <div>
       <h2>{recipe.name}</h2>
-      <img src={recipe.img} alt={recipe.name}></img>
+      <img src={'images/' + recipe.img} alt={recipe.name}></img>
       <h3>{recipe.description}</h3>
       <h4>Ingredients</h4>
       <ul>
