@@ -10,7 +10,7 @@ const recipe8 = {}
 recipe1.name = 'Breakfast Sausage Bread'
 recipe1.id = 1
 recipe1.ingredients = ['sausage', 'bread', 'egg']
-recipe1.description = 'Ssausage with Bread and eggs'
+recipe1.description = 'Sausage with Bread and eggs'
 recipe1.img = '1.jpg'
 recipe1.steps = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, error accusamus. Illo debitis soluta laudantium optio repellat perferendis obcaecati corporis autem laboriosam, mollitia inventore tempora minima similique dicta, sed consequuntur pariatur delectus rerum illum, qui sit expedita aliquam modi cupiditate? Quod minus unde harum laudantium minima, dignissimos nulla tempore. Nemo?'
 
