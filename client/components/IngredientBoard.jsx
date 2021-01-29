@@ -4,7 +4,6 @@ export default function IngredientBoard (props) {
   const { ingredientsFilter, setIngredientsFilter } = props
 
   function setSelectedState ({ target }, name) {
-    console.log(name)
     setIngredientsFilter(state => {
       state = state.map(ing => {
         if (ing.name === name) {
