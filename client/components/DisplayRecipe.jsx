@@ -20,7 +20,7 @@ export default function DisplayRecipe (props) {
         <p >
           {recipe.steps.map((step, idx) => {
             return (
-              <div  key={idx}>
+              <div className="recipeSteps" key={idx}>
                 <>
                   {`${idx + 1}. ${step}`}
                   <br />

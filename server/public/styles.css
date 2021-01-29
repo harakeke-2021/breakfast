@@ -154,6 +154,8 @@ a:hover{
 
 
 button{
+  color: #544846;
+  opacity:0.9;
   font-size: 33px;
   font-weight:700;
   border: none;
@@ -167,12 +169,24 @@ button{
 }
 
 button:hover{
-  color:red;   
+  /* color: #109D40 ; */
+  color: #ffd15d;
+  opacity:1;
+
+  /* color: #ff5400; */
 }
 
 .c{
   font-size:20px;
   padding-top:50px;
-  color: #c0a479;
+  /* color: #c0a479; */
+  
 }
 
+.c:focus{
+  outline: 0px;
+}
+
+.c:hover{
+  color:#FF5E38;
+}
