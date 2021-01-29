@@ -176,6 +176,10 @@ button:hover{
   /* color: #ff5400; */
 }
 
+button:focus{
+  outline: 0px;
+}
+
 .c{
   font-size:20px;
   padding-top:50px;
@@ -183,9 +187,9 @@ button:hover{
   
 }
 
-.c:focus{
+/* .c:focus{
   outline: 0px;
-}
+} */
 
 .c:hover{
   color:#FF5E38;
