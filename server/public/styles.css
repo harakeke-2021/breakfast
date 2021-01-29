@@ -69,3 +69,39 @@ h1{
   height:100px;
   opacity: 1;
 }
+
+.recipeName {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.recipeImage {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; 
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  display: block;
+}
+
+.recipeContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 650px;
+}
+
+.recipeIngImg{
+  width: 120px;
+  height: 120px;
+}
+
+.recipeSteps{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
