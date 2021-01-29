@@ -20,7 +20,7 @@ function LinkList (props) {
       {
         // filtered recipes
         recipesDisplayed.map((recipe, index) => {
-          return <li key={index} className= "recipeLink> <Link to={`/recipe/${recipe.id}`}>{recipe.name} </Link></li>
+          return <li key={index} className= "recipeLink"> <Link to={`/recipe/${recipe.id}`}>{recipe.name} </Link></li>
         }
         )}
     </div>
