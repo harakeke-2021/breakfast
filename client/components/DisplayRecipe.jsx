@@ -12,10 +12,15 @@ export default function DisplayRecipe(props) {
       <img src={'images/' + recipe.img} alt={recipe.name}></img>
       <h3>{recipe.description}</h3>
       <h4>Ingredients</h4>
+      {recipe.ingredients.map((ingredient) => {
+        return <img src={`images/${ingredient}.png`} alt={ingredient}></img>
+      })}
       <ul>
-        {recipe.ingredients.map(ingredient => {
+        {recipe.ingredients.map((ingredient) => {
           return (
-            <li key='ingredient'>{ingredient[0].toUpperCase() + ingredient.slice(1)}</li>
+            <li key='ingredient'>
+              {ingredient[0].toUpperCase() + ingredient.slice(1)}
+            </li>
           )
         })}
       </ul>
@@ -23,11 +28,11 @@ export default function DisplayRecipe(props) {
         {recipe.steps.map((step, idx) => {
           return (
             <>
-              {`${idx + 1}. ${step}`}<br />
+              {`${idx + 1}. ${step}`}
+              <br />
             </>
           )
-        }
-        )}
+        })}
       </p>
     </div>
   )
