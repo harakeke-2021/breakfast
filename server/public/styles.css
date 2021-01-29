@@ -69,3 +69,38 @@ h1{
   height:100px;
   opacity: 1;
 }
+
+a{
+  color: #ffd15d;
+  text-decoration: none;
+
+}
+
+.recipeList{
+   color:  #174D97;
+  font-family:'Fraunces', serif; 
+  font-size: 41px;
+  text-align: center;
+}
+
+
+.recipeLink{ 
+  text-align: center;
+  list-style: none;
+  /* color: #ffd15d; */
+  color: #ffd15d;
+
+  font-weight:550; 
+  font-size: 28px;
+  padding:2px;
+}
+
+a:hover{
+  /* color: #FFB5A6; */
+  /* color: #FF8C61; */
+  /* orange */
+  color: #FF5E38;
+  opacity:0.9;
+}
+
+

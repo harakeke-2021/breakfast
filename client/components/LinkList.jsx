@@ -8,7 +8,7 @@ function LinkList ({ data }) {
     <div>
       {
         recipesData.map((recipe, index) => {
-          return <li key={index}> <Link to={`/recipe/${recipe.id}`}>{recipe.name} </Link></li>
+          return <li className= "recipeLink" key={index}> <Link to={`/recipe/${recipe.id}`}>{recipe.name} </Link></li>
         }
         )}
     </div>

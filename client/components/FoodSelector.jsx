@@ -22,7 +22,7 @@ export default function FoodSelector () {
         ingredientsFilter={ingredientsFilter}
         setIngredientsFilter={setIngredientsFilter}
       />
-      <h3>Recipe List</h3>
+      <h3 className="recipeList">Recipe List</h3>
       <LinkList recipies={recipeData} />
     </>
   )
