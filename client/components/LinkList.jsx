@@ -2,7 +2,7 @@ import React from 'react'
 import recipesData from '../../data/recipes.mjs'
 import { Link } from 'react-router-dom'
 
-function LinkList(props) {
+function LinkList (props) {
   const { ingredientsFilter } = props
   const selectedIngredients = ingredientsFilter
     .filter(i => i.selected)
