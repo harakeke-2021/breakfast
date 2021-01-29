@@ -34,7 +34,7 @@ export default function FoodSelector() {
         />
       )}
       <h3>Recipe List</h3>
-      {!showIngredientsBoard && <LinkList recipies={recipeData} />}
+      {!showIngredientsBoard && <LinkList ingredientsFilter={ingredientsFilter} recipies={recipeData} />}
       <button onClick={handleClick}>
         {showIngredientsBoard ? "Show Recipes" : "Show Ingredients Board"}
       </button>
