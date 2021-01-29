@@ -3,31 +3,28 @@ import React from 'react'
 export default function IngredientBoard (props) {
   const { ingredientsFilter, setIngredientsFilter } = props
 
-  function updateCheckbox (ing) {
-    return (e) => setIngredientsFilter((state) => {
-      state = state.map(a => {
-        if (a.name === ing.name) {
-          a.selected = !a.selected
+  function setSelectedState ({ target }, name) {
+    console.log(name)
+    setIngredientsFilter(state => {
+      state = state.map(ing => {
+        if (ing.name === name) {
+          ing.selected = !ing.selected
         }
-        return a
+        return ing
       })
       return state
     })
   }
 
   return (
-    <ul>
-      {ingredientsFilter.map(ing => (
-        <>
-          <li>{ing.name}: {ing.selected ? 'true' : 'false'}</li>
-          <input
-            type="checkbox"
-            name={ing.name}
-            checked={ing.selected}
-            onChange={updateCheckbox(ing)}
-          />
-        </>
-      ))}
-    </ul>
+    <div className="board">
+      <div className="fromList">
+        {ingredientsFilter.map(({ name, selected }) => (
+          <div id={name} onClick={(e) => setSelectedState(e, name)} key={name} className={`ingredientCard ${selected ? 'selected' : ''}`}>
+            <img className="ingImg" src={`/images/${name}.png`} alt=""/>
+          </div>
+        ))}
+      </div>
+    </div>
   )
 }
