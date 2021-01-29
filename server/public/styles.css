@@ -1,7 +1,13 @@
-body {
+*,html{
+  box-sizing:border-box
+}
+
+
+
+html, body {
   font-family: 'Fraunces', serif;
   font-weight:400; 
-  
+  margin-top: 0;
   background-color:#F9F6F0;
 }
 
@@ -31,15 +37,31 @@ h1{
 
 .ingredientCard{
   display: flex;
-  height: 120px;
-  width: 120px;
-  border-radius: 3px;
-  /* background-color:#E9DAC4; */
-  background-color:#b8ffff;
+  height: 130px;
+  width: 130px;
+  border-radius: 3px;  
+  background-color:#E9DAC4;
   opacity: 0.4;
   margin: 4px;  
   justify-content: center;
   align-items: center;
+  /* border-width: 6px;
+  border-width: 6px;
+  border: 6px solid #E9DAC4 */
+}
+
+.ingredientCard:hover{
+  opacity: 1;
+  background-color: #a8dadc;
+  border: 6px solid #ffffff;
+  border-color: white;
+}
+
+.selected{
+  opacity: 1;
+  border: 6px solid #ffffff;
+  background-color: #ffd15d;
+  border-color: white;
 }
 
 img{  
