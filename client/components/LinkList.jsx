@@ -23,7 +23,7 @@ function LinkList(props) {
           ? recipesDisplayed.map((recipe, index) => {
             return <li key={index}className= "recipeLink"> <Link to={`/recipe/${recipe.id}`}>{recipe.name} </Link></li>
           })
-          : 'No Recipes Found'
+          : <h4>No Recipes Found</h4>
       }
     </div>
 
