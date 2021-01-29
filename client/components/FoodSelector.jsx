@@ -18,7 +18,6 @@ export default function FoodSelector () {
 
   return (
     <>
-      <TestGrid/>
       <IngredientBoard
         ingredientsFilter={ingredientsFilter}
         setIngredientsFilter={setIngredientsFilter}
@@ -26,27 +25,5 @@ export default function FoodSelector () {
       <h3>Recipe List</h3>
       <LinkList recipies={recipeData} />
     </>
-  )
-}
-
-function TestGrid () {
-  return (
-    <div className="board">
-      <div className="fromList">
-        <div className="ingredientCard selected"><img src="/images/avocado.png" alt=""/></div>
-        <div className="ingredientCard"><img src="/images/bacon.png" alt=""/></div>
-        <div className="ingredientCard"><img src="/images/berries.png" alt=""/></div>
-        <div className="ingredientCard"><img src="/images/bread.png" alt=""/></div>
-        <div className="ingredientCard "><img src="/images/cheese.png" alt=""/></div>
-        <div className="ingredientCard"><img src="/images/milk.png" alt=""/></div>
-        <div className="ingredientCard selected"><img src="/images/mushroom.png" alt=""/></div>
-        <div className="ingredientCard"><img src="/images/rice.png" alt=""/></div>
-        <div className="ingredientCard"><img src="/images/sausage.png" alt=""/></div>
-        <div className="ingredientCard"><img src="/images/tomato.png" alt=""/></div>
-        <div className="ingredientCard"><img src="/images/yogurt.png" alt=""/></div>
-        <div className="ingredientCard"><img src="/images/avocado.png" alt=""/></div>
-      </div>
-    </div>
-
   )
 }
