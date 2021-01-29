@@ -10,7 +10,6 @@ const ingredients = [
   'avocado',
   'cheese',
   'rice',
-  'hashbrown',
   'berries'
 ]
 
