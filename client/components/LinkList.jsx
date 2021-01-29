@@ -21,7 +21,7 @@ function LinkList(props) {
       {
         recipesDisplayed.length
           ? recipesDisplayed.map((recipe, index) => {
-            return <li key={index}> <Link to={`/recipe/${recipe.id}`}>{recipe.name} </Link></li>
+            return <li key={index}className= "recipeLink"> <Link to={`/recipe/${recipe.id}`}>{recipe.name} </Link></li>
           })
           : 'No Recipes Found'
       }
