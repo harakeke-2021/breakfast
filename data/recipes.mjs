@@ -82,10 +82,13 @@ recipe7.id = 7
 recipe7.ingredients = ['avocado', 'bread']
 recipe7.description = 'You probably can\'t afford this'
 recipe7.img = '7.jpg'
-recipe7.steps = ['Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, error accusamus.',
-  'Illo debitis soluta laudantium optio repellat perferendis obcaecati corporis autem laboriosam,',
-  'mollitia inventore tempora minima similique dicta, sed consequuntur pariatur delectus rerum illum,',
-  'qui sit expedita aliquam modi cupiditate? Quod minus unde harum laudantium minima, dignissimos nulla tempore. Nemo?']
+recipe7.steps = ['Cut avocado in half and scoop out the flesh into a bowl',
+  'Add lemon than mash with a fork',
+  'Season to taste with salt and pepper',
+  'Toast the bread',
+  'Spread avocado onto toast',
+  '?????',
+  'Congratulations! You are now a home owner!']
 
 const recipes = [
   recipe1,
