@@ -27,17 +27,17 @@ export default function FoodSelector() {
 
   return (
     <>
-      { showIngredientsBoard &&
+      {showIngredientsBoard && (
         <IngredientBoard
           ingredientsFilter={ingredientsFilter}
           setIngredientsFilter={setIngredientsFilter}
         />
-      }
+      )}
       <h3>Recipe List</h3>
-      <button onClick={handleClick}>{showIngredientsBoard ? 'Show Recipes' : 'Show Ingredients Board'}</button>
-      { !showIngredientsBoard &&
-      <LinkList recipies={recipeData} />
-      }
+      {!showIngredientsBoard && <LinkList recipies={recipeData} />}
+      <button onClick={handleClick}>
+        {showIngredientsBoard ? "Show Recipes" : "Show Ingredients Board"}
+      </button>
     </>
   )
 }
