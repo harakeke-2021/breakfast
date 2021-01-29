@@ -17,10 +17,10 @@ export default function DisplayRecipe (props) {
             return <img className="recipeIngImg" src={`images/${ingredient}.png`} alt={ingredient}></img>
           })}
         </div>
-        <p>
+        <p >
           {recipe.steps.map((step, idx) => {
             return (
-              <div className="recipeSteps" key={idx}>
+              <div  key={idx}>
                 <>
                   {`${idx + 1}. ${step}`}
                   <br />
