@@ -2,7 +2,7 @@ import React from 'react'
 import recipesData from '../../data/recipes.mjs'
 import { Link } from 'react-router-dom'
 
-function LinkList (props) {
+function LinkList(props) {
   const { ingredientsFilter } = props
   const selectedIngredients = ingredientsFilter
     .filter(i => i.selected)
@@ -17,12 +17,14 @@ function LinkList (props) {
 
   return (
     <div>
+      <h3>Recipe List</h3>
       {
-        // filtered recipes
-        recipesDisplayed.map((recipe, index) => {
-          return <li key={index}> <Link to={`/recipe/${recipe.id}`}>{recipe.name} </Link></li>
-        }
-        )}
+        recipesDisplayed.length
+          ? recipesDisplayed.map((recipe, index) => {
+            return <li key={index}> <Link to={`/recipe/${recipe.id}`}>{recipe.name} </Link></li>
+          })
+          : 'No Recipes Found'
+      }
     </div>
 
   )
