@@ -10,17 +10,17 @@ export default function DisplayRecipe (props) {
     <div>
       <div>
         <h2 className="recipeName">{recipe.name}</h2>
-        <img className="recipeImage" src={'images/' + recipe.img} alt={recipe.name}></img>
+        {/* <img className="recipeImage" src={'images/' + recipe.img} alt={recipe.name}></img> */}
         {/* <h3>{recipe.description}</h3> */}
         <div className="recipeContainer">
           {recipe.ingredients.map((ingredient) => {
             return <img className="recipeIngImg" src={`images/${ingredient}.png`} alt={ingredient}></img>
           })}
         </div>
-        <p>
+        <p >
           {recipe.steps.map((step, idx) => {
             return (
-              <div className="recipeSteps" key={idx}>
+              <div  key={idx}>
                 <>
                   {`${idx + 1}. ${step}`}
                   <br />

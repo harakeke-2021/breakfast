@@ -17,7 +17,7 @@ function LinkList(props) {
 
   return (
     <div>
-      <h3>Recipe List</h3>
+      <h3 className="recipeList">Recipe List</h3>
       {
         recipesDisplayed.length
           ? recipesDisplayed.map((recipe, index) => {
