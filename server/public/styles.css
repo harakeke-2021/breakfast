@@ -48,6 +48,7 @@ h1{
   margin: 4px;  
   justify-content: center;
   align-items: center;
+  
 }
 
 .ingredientCard:hover{
@@ -71,6 +72,8 @@ h1{
 }
 
 .recipeName {
+  color: #174D97;
+  font-size:31px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;  
@@ -96,19 +99,29 @@ h1{
 }
 
 .recipeIngImg{
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
 }
 
 .recipeSteps{
+  font-size:20px;  
+  width:450px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  padding:7px;
+  font-weight:350;
 }
 
 a{
   color: #ffd15d;
   text-decoration: none;
+  -o-transition:.1s;
+  -ms-transition:.1;
+  -moz-transition:.1;
+  -webkit-transition:.1s;
+  /* ...and now for the proper property */
+  transition:.035s;
 
 }
 
@@ -140,3 +153,40 @@ a:hover{
 }
 
 
+button{
+  color: #544846;
+  opacity:0.9;
+  font-size: 33px;
+  font-weight:700;
+  border: none;
+  background: none;
+  font-family:'Fraunces', serif;
+  padding-top:20px;
+  display: block;
+  margin: auto;  
+  text-align: center;
+  /* transition: 0.1s; */
+}
+
+button:hover{
+  /* color: #109D40 ; */
+  color: #ffd15d;
+  opacity:1;
+
+  /* color: #ff5400; */
+}
+
+.c{
+  font-size:20px;
+  padding-top:50px;
+  /* color: #c0a479; */
+  
+}
+
+.c:focus{
+  outline: 0px;
+}
+
+.c:hover{
+  color:#FF5E38;
+}

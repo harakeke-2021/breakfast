@@ -34,8 +34,8 @@ export default function FoodSelector() {
         />
       )}
       {!showIngredientsBoard && <LinkList ingredientsFilter={ingredientsFilter} recipies={recipeData} />}
-      <button onClick={handleClick}>
-        {showIngredientsBoard ? "Show Recipes" : "Show Ingredients Board"}
+      <button className="button" onClick={handleClick} className={showIngredientsBoard ? 'b' : 'c'}>
+        {showIngredientsBoard ? "Show Recipes" : "Back To Ingredients Board"}
       </button>
     </>
   )
